@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  background-color: #222327;
+  color: white;
+  
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.heros{
+  padding-top: 1em;
+  column-count: 5;
+  column-gap: 1em;
+  
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  position: absolute;
+  left: 4%;
+
+  padding-bottom: 1.5em;
+}
+.card{
+  box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, .2);
+  border-radius: 0.5rem;
+ 
+  margin-bottom: 4vh;
+  margin-right: 3vw;
+
+  overflow-y: hidden;
+
+  width: 15vw;
+  height: 38vh;
+  background-color: rgb(129, 255, 207);
+
+  position: relative;
+  
+}
+.card:hover .nameCharacter{
+  filter: blur(1px);
+}
+.card:hover .seeCharacter{
+  display:inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  font-size: xx-large;
+  font-weight: 700;
+  width: 10vw;
+
+  color:rgba(19, 97, 142, 0.955);
+  text-decoration:none;
+
+  margin: 20px 70px 0 0;
+
+}
+.seeCharacter{
+  display: none;
+}
+
+img{
+  width: 100%;
+ 
+  transition: .5s ease;
+}
+.card:hover img{
+  filter: blur(2px);
+}
+.menu li{
+  display: inline;
+  margin: auto 10px;
+}
+.home{
+  margin-top: 30vh;
+}
+.nameCharacter{
+  color:rgb(20, 45, 145);
+  transition: .5s ease;
+}
+
+/* .title{
+  color:rgba(50, 252, 73, 0.811);
+} */
+.menuLine{
+  border-color:rgb(34, 72, 226);
+  background-color: rgba(50, 252, 218, 0.811);
+}
+.locations{
+  display: inline-block;
+  column-count: 4;
+  margin-left: 5vw;
+
+  text-align: left;
+}
+.blockLocation{
+  display: inline-block;
+  width:20vw;
+  border: 2px solid white;
+  margin: 5px;
+  padding-left: 7px;
+  color:rgb(166, 193, 227);
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.blockLocation:hover{
+  background-color: rgba(129, 122, 122, 0.382); 
+}
+.locationName{
+  color: rgba(50, 252, 218, 0.811);
+ 
+}
+.see{
+  color:rgb(166, 193, 227);
+}
+.see:hover{
+  color:rgb(34, 72, 226);
+}
+
+
+.allInf{
+  margin: 10px 100px 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.leftPanel{
+  display: inline-block;
+  column-count: 1;
+  width: 25vw;
+
+
+}
+.infBlock{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-weight: 500;
+ 
+}
+.episodes{
+  margin-right: 200px;
+  margin-left: 20px;
+}
+.episodeInf{
+  margin-top: -18px;
+  text-align: left;
+}
+.meeting{
+  color:#1d5999;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.episodeInf h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.episodes p{
+  text-align: left;
+}
+.meeting:hover{
+  color:rgb(158, 33, 189);
+}
+.titleEpisodes{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  /* display: flex;
+  width: 100%;
+  padding-right: 450px;
+  background-color: rgb(255, 0, 13); */
+
+}
+
+.imageInf{
+  width: 100%;
+
+}
+.textInf{
+  display: inline-block;
+  text-align: left;
+  margin-bottom: -10px;
+}
+.buttonNext{
+  position: absolute;
+  top: 55%;
+  right: 0;
+  margin-right: 30px;
+
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(34, 72, 226);
+  border-radius: 0.2rem;
+  color: rgba(50, 252, 218, 0.811);
+  border-color: rgb(34, 72, 226);
+  
+}
+.buttonBack{
+  position: absolute;
+  top: 55%;
+  left: 0;
+  margin-left: 30px;
+
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(34, 72, 226);
+  border-radius: 0.2rem;
+  color: rgba(50, 252, 218, 0.811);
+  border-color: rgb(34, 72, 226);
+}
+.residents{
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+ 
+}
+.residentRes{
+  text-align: left;
+  position: relative;
+  left: 40%;
+}
+.residents ul{
+  margin-left: 10px;
+}
+.residents li{
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+  
+}
